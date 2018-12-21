@@ -61,7 +61,7 @@ def timerfun(sched_timer):
 
 
 if __name__ == '__main__':
-    itchat.auto_login(hotReload=True)
+    itchat.auto_login(hotReload=True, enableCmdQR=2)
     timerfun('2018-12-21T17:05:00')
 
 
