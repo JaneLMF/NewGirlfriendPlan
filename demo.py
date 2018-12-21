@@ -39,10 +39,12 @@ def send_news():
         itchat.send(message3, toUserName=friend)
         itchat.send(message4, toUserName=friend)
     except Exception as e:
+        print(e)
         message4 = u"今天" + your_name + u"出现了 bug /(ㄒoㄒ)/~~"
         itchat.send(message4, toUserName=friend)
 
 def run_task():
+    print('run_task')
     send_news()
 
 def timerfun(sched_timer):
