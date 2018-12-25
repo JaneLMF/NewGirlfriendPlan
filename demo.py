@@ -19,7 +19,7 @@ def send_news():
     test = True
     try:
         # 登陆你的微信账号，会弹出网页二维码，扫描即可
-        itchat.auto_login(hotReload=True)
+        itchat.auto_login(hotReload=True, enableCmdQR=True)
         # 获取你对应的好友备注，这里的小明我只是举个例子
         # 改成你最心爱的人的名字。
         # friend = 'filehelper'
