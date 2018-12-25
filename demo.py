@@ -14,9 +14,9 @@ def get_news():
     return contents, note, translation
 
 def send_news():
-    friend_name = u'TN'
+    friend_name = u'Jane'
     your_name = u'最爱你的人'
-    test = True
+    test = False
     try:
         # 登陆你的微信账号，会弹出网页二维码，扫描即可
         itchat.auto_login(hotReload=True)
@@ -62,7 +62,7 @@ def timerfun(sched_timer):
 
 if __name__ == '__main__':
     itchat.auto_login(hotReload=True, enableCmdQR=True)
-    timerfun('2018-12-21T22:00:00')
+    timerfun('2018-12-24T22:00:00')
 
 
 
